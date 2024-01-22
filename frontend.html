@@ -88,6 +88,8 @@ let listaGraczyPamiec = listaGraczy;
 let losowaniePamiec = listaGraczy;
 let gracz = "";
 
+//Importowanie listy graczy, możliwość zmiany na wywołanie funkcji przyciskiem
+
 //async function importList (){
 listaGraczy = listaGraczy.join('\n');
 //await new Promise(resolve => setTimeout(resolve, 500));
@@ -102,6 +104,8 @@ if (listaGraczy.length == 0) {
 document.getElementById("losowany").value = gracz;
 listaGraczy = listaGraczyPamiec;
 //}
+
+//Mechanizm losowania - tworzy nowy array z usuniętą losową pozycją, wyświetla różnicę między arrayami
 
 async function rollNext (){
     document.getElementById("losowany").style.backgroundColor="#2e3035"
